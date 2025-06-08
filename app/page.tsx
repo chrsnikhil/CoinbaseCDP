@@ -81,13 +81,19 @@ function App() {
                 evaluated by AI, and receive instant crypto payments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center">
+                <Link
+                  href="/submit-work"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center"
+                >
                   Start Earning Today
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </button>
-                <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl hover:border-blue-600 hover:text-blue-600 transition-colors">
+                </Link>
+                <Link
+                  href="/create-bounty"
+                  className="border border-gray-300 text-gray-700 px-8 py-4 rounded-xl hover:border-blue-600 hover:text-blue-600 transition-colors flex items-center justify-center"
+                >
                   Post a Bounty
-                </button>
+                </Link>
               </div>
               <div className="flex items-center space-x-8 text-sm text-gray-600">
                 <div className="flex items-center">
