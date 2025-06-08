@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import {
   Zap,
   Shield,
@@ -51,9 +52,12 @@ function App() {
               >
                 Pricing
               </a>
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-shadow">
+              <Link
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-shadow"
+                href="/bounties"
+              >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         </div>
