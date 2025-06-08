@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@coinbase/coinbase-sdk": "^0.25.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.24.2"
+  }
+}
