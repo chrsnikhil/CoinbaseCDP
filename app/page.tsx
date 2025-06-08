@@ -17,9 +17,11 @@ import {
   X,
 } from 'lucide-react';
 
-function App() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="!text-red-500 !text-6xl !font-bold !bg-transparent">TEST - If you see this in red and large, Tailwind is working</div>
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
       {/* Navigation */}
       <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -556,8 +558,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </main>
   );
 }
-
-export default App;

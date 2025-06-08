@@ -1,18 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Inter } from 'next/font/google';
+import '@coinbase/onchainkit/styles.css';
 import './globals.css';
 import { Providers } from '@/utils/providers';
 import { WagmiProviders } from '@/utils/wagmi';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Coinbase CDP',
@@ -28,11 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <Providers>
         <WagmiProviders>
-          <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-          >
-            {children}
-          </body>
+          <body className={inter.className}>{children}</body>
         </WagmiProviders>
       </Providers>
     </html>
